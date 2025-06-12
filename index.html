@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AURO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+     <body style="
+     background-image:url('samu2.jpg');
+     background-size:cover;
+     background-position:center;
+            
+        
+        
+        
+        .header {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #fff; 
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            color: #333; 
+            backdrop-filter: blur(5px); 
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.95); 
+        }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .footer p {
+            margin: 10px 0;
+            font-size: 16px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .footer p:first-child {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                font-size: 48px;
+                margin-bottom: 30px;
+            }
+            
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            
+            .grid-item {
+                padding: 20px;
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+
+        }
+            .header {
+                font-size: 36px;
+            }
+            
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            body {
+                background-attachment: scroll; 
+            }
+        
+    </style>
+</head>
+
+
+    
+<body>
+    <h1 class="header">AURO</h1>
+    
+    <div class="grid-container">
+        <div class="grid-item">HAPPY</div>
+        <div class="grid-item">BIGGLE</div>
+        <div class="grid-item">STARTER</div>
+        <div class="grid-item">POWER</div>
+        <div class="grid-item">TWELF</div>
+        <div class="grid-item">CURRENT</div>
+        <div class="grid-item">SERVICES</div>
+        <div class="grid-item">REUXTRY</div>
+        <div class="grid-item">STAY</div>
+    </div>
+    
+    <div class="footer">
+        <p>Checks Profitability</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gridItems = document.querySelectorAll('.grid-item');
+            
+            gridItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    console.log('Clicked:', this.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
